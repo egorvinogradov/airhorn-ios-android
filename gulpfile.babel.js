@@ -142,4 +142,3 @@ const build = gulp.series(clean, copy, scripts, gulp.parallel(client, styles, so
 
 gulp.task('default', build);
 gulp.task('clean', clean);
-

@@ -6,32 +6,38 @@
       {
         "src": "/images/touch/android-launchericon-48-48.png",
         "type": "image/png",
-        "sizes": "48x48"
+        "sizes": "48x48",
+        "purpose": "any"
       },
       {
         "src": "/images/touch/android-launchericon-72-72.png",
         "type": "image/png",
-        "sizes": "72x72"
+        "sizes": "72x72",
+        "purpose": "any"
       },
       {
         "src": "/images/touch/android-launchericon-96-96.png",
         "type": "image/png",
-        "sizes": "96x96"
+        "sizes": "96x96",
+        "purpose": "any"
       },
       {
         "src": "/images/touch/android-launchericon-144-144.png",
         "type": "image/png",
-        "sizes": "144x144"
+        "sizes": "144x144",
+        "purpose": "any"
       },
       {
         "src": "/images/touch/android-launchericon-192-192.png",
         "type": "image/png",
-        "sizes": "192x192"
+        "sizes": "192x192",
+        "purpose": "any"
       },
       {
         "src": "/images/touch/android-launchericon-512-512.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "512x512",
+        "purpose": "any"
       },
 
       {
@@ -73,7 +79,46 @@
   ],
   "start_url": "/?homescreen=1",
   "scope": "/",
-  "display": "standalone",
   "background_color": "#2196F3",
-  "theme_color": "#2196F3"
+  "theme_color": "#2196F3",
+
+  "orientation": "portrait",
+  "shortcuts" : [],
+  "screenshots" : [
+    {
+      "src": "/images/screenshots/screenshot.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Homescreen of Awesome App"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.ivandigital.airhorn",
+      "id": "com.ivandigital.airhorn"
+    }, {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/air-horn-multi-fun-sounds/id1329898610"
+    }
+  ],
+  "prefer_related_applications": true,
+  "categories": ["entertainment", "music", "utilities"],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "name",
+      "text": "description",
+      "url": "link"
+    }
+  },
+
+
+  "display_override": ["window-controls-overlay", "fullscreen"],
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en"
+
 }

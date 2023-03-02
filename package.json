@@ -38,9 +38,9 @@
     ]
   },
   "scripts": {
-    "build": "gulp",
     "start": "npm run build && http-server dist/",
-    "deploy": "cp CNAME dist && cd dist && surge . && open \"https://$(cat CNAME)\""
+    "build": "gulp",
+    "deploy": "./bin/deploy.sh"
   },
   "repository": {
     "type": "git",
